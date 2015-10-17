@@ -1,6 +1,6 @@
 /* 
  * Cinnamon Framework
- * Copyright (c) 2014, Andres Jaimes Velazquez
+ * Copyright (c) 2014, Andres Jaimes (http://andres.jaimes.net)
  * All rights reserved.
  * 
  * Redistribution and use in source and binary forms, with or without
@@ -43,7 +43,7 @@ import java.util.Set;
  * - When user calls the invalidate method. 
  * - When the corresponding HttpSession has expired.
  * 
- * @author Andres Jaimes Velazquez (http://andres.jaimes.net)
+ * @author Andres Jaimes (http://andres.jaimes.net)
  */
 public class Session implements Map<String, Object> {
     

@@ -1,3 +1,7 @@
+/**
+ * Based on the work of Jerry Orr,
+ * as published on Java Code Geeks.
+ */
 package com.cinnamonframework.util;
 
 import java.security.NoSuchAlgorithmException;

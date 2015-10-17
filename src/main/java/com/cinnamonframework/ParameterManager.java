@@ -1,6 +1,6 @@
 /* 
  * Cinnamon Framework
- * Copyright (c) 2014, Andres Jaimes Velazquez
+ * Copyright (c) 2014, Andres Jaimes (http://andres.jaimes.net)
  * All rights reserved.
  * 
  * Redistribution and use in source and binary forms, with or without
@@ -47,7 +47,7 @@ import javax.servlet.http.HttpServletRequest;
  * Handles parameters in Cinnamon user's classes, assigning requested method
  * parameters and converting them to the right types.
  * 
- * @author Andres Jaimes
+ * @author Andres Jaimes (http://andres.jaimes.net)
  */
 class ParameterManager {
 

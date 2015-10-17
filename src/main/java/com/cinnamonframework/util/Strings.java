@@ -1,6 +1,6 @@
 /* 
  * Cinnamon Framework
- * Copyright (c) 2014, Andres Jaimes
+ * Copyright (c) 2014, Andres Jaimes (http://andres.jaimes.net)
  * All rights reserved.
  * 
  * Redistribution and use in source and binary forms, with or without
@@ -41,7 +41,7 @@ import java.util.regex.Pattern;
 
 /**
  *
- * @author andres
+ * @author Andres Jaimes (http://andres.jaimes.net)
  */
 public class Strings {
 
@@ -129,8 +129,8 @@ public class Strings {
 
     /**
      * Joins a list of strings using a delimeter.
-     * @param list
-     * @param delim
+     * @param list list of items
+     * @param delim separator
      * @return a string including all the elements separated by "delim"
      */
     public static String join(List<String> list, String delim) {
@@ -138,17 +138,22 @@ public class Strings {
         if (list == null || delim == null)
             throw new NullPointerException("Parameter cannot be null.");
         
-        String[] array = new String[list.size()];
-        array = list.toArray(array);
+        StringBuilder sb = new StringBuilder();
+        String loopDelim = "";
+        
+        for (String s : list) {
+            sb.append(loopDelim).append(s);
+            loopDelim = delim;
+        }
 
-        return join(array, delim);
+        return sb.toString();
 
     }
 
     /**
-     * Joins a list of strings using delim.
-     * @param list
-     * @param delim
+     * Joins an array of strings using delim.
+     * @param list array of items
+     * @param delim separator
      * @return a string including all the elements separated by "delim"
      */
     public static String join(String[] list, String delim) {
@@ -194,7 +199,7 @@ public class Strings {
      * Returns a string's md5 hash.
      * Based on the work of Mkyong.
      * @see http://www.mkyong.com/java/java-md5-hashing-example/
-     * @return a string's md5 hash.
+     * @return a md5 hash of the given string.
      */
     public static String md5(String s) {
         if (s == null)

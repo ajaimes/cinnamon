@@ -1,6 +1,6 @@
 /* 
  * Cinnamon Framework
- * Copyright (c) 2014, Andres Jaimes Velazquez
+ * Copyright (c) 2014, Andres Jaimes (http://andres.jaimes.net)
  * All rights reserved.
  * 
  * Redistribution and use in source and binary forms, with or without
@@ -30,13 +30,8 @@
  */
 package com.cinnamonframework;
 
-import com.cinnamonframework.annotations.ParamMapping;
-import java.lang.annotation.Annotation;
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
-import java.util.LinkedList;
-import java.util.List;
-import java.util.regex.Pattern;
 import javax.servlet.http.HttpServletRequest;
 
 /**
@@ -139,7 +134,7 @@ class ControllerManager {
     
     
     /**
-     * Looks for a method named as urlAnalyzer.getMethod() and
+     * Looks for a method named urlAnalyzer.getMethod() and
      * returns it.
      * If the target instance contains more than one public method
      * with the required name, this method will return only the first 

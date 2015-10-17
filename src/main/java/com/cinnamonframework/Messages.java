@@ -1,6 +1,6 @@
 /* 
  * Cinnamon Framework
- * Copyright (c) 2014, Andres Jaimes Velazquez
+ * Copyright (c) 2014, Andres Jaimes (http://andres.jaimes.net)
  * All rights reserved.
  * 
  * Redistribution and use in source and binary forms, with or without
@@ -38,8 +38,7 @@ import java.util.Set;
 
 /**
  *
- * @author andres
- * @version 1.3
+ * @author Andres Jaimes (http://andres.jaimes.net)
  */
 public class Messages implements Map<String, String> {
     

@@ -1,6 +1,6 @@
 /* 
  * Cinnamon Framework
- * Copyright (c) 2014, Andres Jaimes
+ * Copyright (c) 2014, Andres Jaimes (http://andres.jaimes.net)
  * All rights reserved.
  * 
  * Redistribution and use in source and binary forms, with or without
@@ -41,7 +41,7 @@ import java.util.logging.Logger;
 
 /**
  *
- * @author andres
+ * @author Andres Jaimes (http://andres.jaimes.net)
  */
 public class Files {
     
@@ -53,7 +53,8 @@ public class Files {
      * @return a file extension
      */
     public static String getExtension(String fileName) {
-        if (fileName == null) throw new NullPointerException("fileName cannot be null.");
+        if (fileName == null) 
+            throw new NullPointerException("fileName cannot be null.");
         
         int pos = fileName.lastIndexOf(".");
         if (pos > 0 && fileName.length() > pos + 1) {
@@ -69,7 +70,8 @@ public class Files {
      * @return a file name without extension.
      */
     public static String removeExtension(String fileName) {
-        if (fileName == null) throw new NullPointerException("fileName cannot be null.");
+        if (fileName == null) 
+            throw new NullPointerException("fileName cannot be null.");
         
         int pos = fileName.lastIndexOf(".");
         if (pos > 0) {
@@ -91,7 +93,8 @@ public class Files {
     public static String md5(File file) 
         throws FileNotFoundException, IOException {
         
-        if (file == null) throw new NullPointerException("file cannot be null.");
+        if (file == null) 
+            throw new NullPointerException("file cannot be null.");
         
         StringBuilder sb = new StringBuilder();
         
