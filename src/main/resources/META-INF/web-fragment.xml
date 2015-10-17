@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<web-fragment xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+	 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	 xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-fragment_3_1.xsd"
+	 version="3.1">
+    <servlet>
+        <servlet-name>CinnamonServlet</servlet-name>
+        <servlet-class>com.cinnamonframework.CinnamonServlet</servlet-class>
+        <!-- Default controllers package for quick start up. To set your own
+             controller's package add the following entry to your web.xml file,
+             between the <web-app> tags:
+        
+            <context-param>
+                <param-name>com.cinammonframework.controllers</param-name>
+                <param-value>your.package.controllers</param-value>
+            </context-param>
+        -->
+        <init-param>
+            <param-name>com.cinammonframework.controllers</param-name>
+            <param-value>my.controllers</param-value>
+        </init-param>
+        
+        <!-- If true, all classes and methods will respond to their slug version,
+             that is:
+             
+             instead of calling /HelloWorld/sayHello, use /hello-world/say-hello
+        -->
+        <init-param>
+            <param-name>com.cinammonframework.use-slugs</param-name>
+            <param-value>true</param-value>
+        </init-param>
+    </servlet>
+    <!-- By default Cinnamon will respond to requests with the following url pattern.
+         But it can be overriden on the user's application web.xml file.
+         Just copy and paste this fragment into your application's web.xml file,
+         between the <web-app> tags and set the desired url-pattern:
+    
+        <servlet-mapping>
+            <servlet-name>CinnamonServlet</servlet-name>
+            <url-pattern>/custom/*</url-pattern>
+        </servlet-mapping>
+    -->
+    <servlet-mapping>
+        <servlet-name>CinnamonServlet</servlet-name>
+        <url-pattern>/main/*</url-pattern>
+    </servlet-mapping>
+</web-fragment>
